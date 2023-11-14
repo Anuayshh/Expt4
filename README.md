@@ -1,37 +1,45 @@
 # Ex.No:4 To create a two screens , first screen will take one number input from user. After click on Factorial button, second screen will open and it should display factorial of the same number using Explicit Intents.
-# AIM:
 
+## DATE : 29/08/2023
+
+# AIM:
 To create a two screens , first screen will take one number input from user. After click on Factorial button, second screen will open and it should display factorial of the same number using Explicit Intents.
 
 # EQUIPMENTS REQUIRED:
-
 Latest Version Android Studio
+
 # ALGORITHM:
 
-Step 1: Open Android Stdio and then click on File -> New -> New project.
+### Step 1: 
+Open Android Stdio and then click on File -> New -> New project.
 
-Step 2: Then type the Application name as HelloWorld and click Next.
+### Step 2:
+Then type the Application name as HelloWorld and click Next.
 
-Step 3: Then select the Minimum SDK as shown below and click Next.
+### Step 3: 
+Then select the Minimum SDK as shown below and click Next.
 
-Step 4: Then select the Empty Activity and click Next. Finally click Finish.
+### Step 4:
+Then select the Empty Activity and click Next. Finally click Finish.
 
-Step 5: Design layout in activity_main.xml.
+### Step 5: 
+Design layout in activity_main.xml.
 
-Step 6: Display message give in MainActivity file.
+### Step 6:
+Display message give in MainActivity file.
 
-Step 7: Save and run the application.
+### Step 7:
+Save and run the application.
+
 # PROGRAM:
-~~~
-/*
+```
 Program to print the text “ExplicitIntent”.
 Developed by: V R ANU AYSHWARYA
 Registeration Number : 212221040016
-*/
-~~~
+```
 
 ## Activity_xml File:
-~~~
+```
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout
 xmlns:android="http://schemas.android.com/apk/res/android"
@@ -66,11 +74,10 @@ tools:context=".MainActivity">
     app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-~~~
+```
 
 ## Activity_xml 2 File:
-
-~~~
+```
 <?xml version="1.0" encoding="utf-8"?>
  <androidx.constraintlayout.widget.ConstraintLayout        xmlns:android="http://schemas.android.com/apk/res/android"
 xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -90,9 +97,9 @@ tools:context=".FactorialActivity">
    app:layout_constraintStart_toStartOf="parent"
    app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
-
+```
 ## MainActivity.java File:
-
+```
   package com.example.factorialexplicit;
 
   import static com.example.factorialexplicit.R.id.factorialButton;
@@ -131,11 +138,9 @@ factorialButton.setOnClickListener(new View.OnClickListener() {
 });
 }
 }
-~~~
-
+```
 ## MainActivity.java 2 File:
-
-~~~
+```
 package com.example.factorialexplicit;
 
 import static com.example.factorialexplicit.R.id.factorialTextView;
@@ -172,9 +177,9 @@ private long calculateFactorial(int number) {
 return factorial;
 }
 }
-~~~
+```
 
-# OUTPUT
+# OUTPUT:
 
 ![265635985-b49328c6-5f68-430a-ab5f-3832bfd4944d](https://github.com/Anuayshh/Expt4/assets/127651217/741e9e3c-c98a-49db-8889-7942557b6384)
 
@@ -182,7 +187,6 @@ return factorial;
 
 ![265636090-2af09f50-71ae-4f86-bc4b-f176b05853da](https://github.com/Anuayshh/Expt4/assets/127651217/a2171208-0647-4e5e-9881-651f40f7f3ff)
 
-# RESULT
-
+# RESULT:
 Thus a Simple Android Application create a Explicit Intents using Android Studio is developed and executed successfully.
 
